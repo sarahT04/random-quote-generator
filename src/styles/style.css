@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@600&display=swap&family=Edu+SA+Beginner:wght@600');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+.fa-quote-left {
+    margin-right: 7px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#quote-box {
+    border-radius: 3px;
+    position: relative;
+    margin: auto;
+    width: 450px;
+    padding: 40px 50px;
+    display: table;
+    word-wrap: break-word;
+    background-color: #fff;
+}
+
+#quote-box #quote-text {
+    text-align: center;
+    height: auto;
+    width: 450px;
+    clear: both;
+    font-weight: 500;
+    font-size: 1.75em;
+}
+
+#quote-box #quote-author {
+    text-align: center;
+    height: auto;
+    text-align: right;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+#share-quote {
+    float: left;
+}
+
+
+#new-quote {
+    float: right;
+}
+
+button,
+.button {
+    border: none;
+    border-radius: 3px;
+    color: white;
+    outline: none;
+    background-color: pink;
+    font-size: 1em;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+:is(button, .button):hover {
+    opacity: 0.8;
+}
+
+:is(button, .button):is(:focus, :active) {
+    opacity: 1;
+}
+
+#share-quote> :not(:nth-child(1)) {
+    margin-left: 10px;
+}
+
+#author {
+    font-family: 'Edu SA Beginner', cursive;
+}
+
+#wrapper {
+    width: 650px;
+    height: max-content;
+    padding: 30px 0;
+}
+
+input[type="color"] {
+    width: 36px;
+    height: 36px;
+    border: none;
+    margin-right: 10px;
+    background: none;
+    display: inline;
+    transform: translateY(8px);
+}
+
+.fa-infinity, .fa-circle-pause {
+    height: 26px;
+    width: 36px;
+    margin-right: 5px;
+}
